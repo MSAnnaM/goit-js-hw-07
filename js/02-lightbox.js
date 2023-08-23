@@ -10,3 +10,8 @@ const galleryLink = galleryItems
     .join('');
 
 galleryPlace.insertAdjacentHTML('afterbegin', galleryLink);
+ 
+const lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionDelay:250,
+});
